@@ -11,14 +11,14 @@ import Link from "next/link";
 const questions = [
   {
     _id: "1",
-    title: "Cascading Deletes in SQLAlchemy?",
+    title: "When is Passover?",
     tags: [
       { _id: "1", name: "python" },
       { _id: "2", name: "sql" },
     ],
     author: {
       _id: "1",
-      name: "John Doe",
+      name: "Mark Cuban",
       picture: "john-doe.jpg",
     },
     upvotes: 1500000,
@@ -28,7 +28,41 @@ const questions = [
   },
   {
     _id: "2",
-    title: "How to center a div?",
+    title: "When is the best time to christian your child?",
+    tags: [
+      { _id: "3", name: "css" },
+      { _id: "4", name: "html" },
+    ],
+    author: {
+      _id: "2",
+      name: "Janet Smith",
+      picture: "jane-smith.jpg",
+    },
+    upvotes: 5,
+    views: 50,
+    answers: [],
+    createdAt: new Date("2021-09-02T10:30:00.000Z"),
+  },
+  {
+    _id: "3",
+    title: "Is the old testament valid in todays time?",
+    tags: [
+      { _id: "3", name: "css" },
+      { _id: "4", name: "html" },
+    ],
+    author: {
+      _id: "2",
+      name: "Jquan Collins",
+      picture: "jane-smith.jpg",
+    },
+    upvotes: 5,
+    views: 50,
+    answers: [],
+    createdAt: new Date("2021-09-02T10:30:00.000Z"),
+  },
+  {
+    _id: "4",
+    title: "Does easter have to deal with Bunnies?",
     tags: [
       { _id: "3", name: "css" },
       { _id: "4", name: "html" },
@@ -36,6 +70,40 @@ const questions = [
     author: {
       _id: "2",
       name: "Jane Smith",
+      picture: "jane-smith.jpg",
+    },
+    upvotes: 5,
+    views: 50,
+    answers: [],
+    createdAt: new Date("2021-09-02T10:30:00.000Z"),
+  },
+  {
+    _id: "5",
+    title: "Can a saint sin and still be born again christian?",
+    tags: [
+      { _id: "3", name: "css" },
+      { _id: "4", name: "html" },
+    ],
+    author: {
+      _id: "2",
+      name: "Tony Sopprano",
+      picture: "jane-smith.jpg",
+    },
+    upvotes: 5,
+    views: 50,
+    answers: [],
+    createdAt: new Date("2021-09-02T10:30:00.000Z"),
+  },
+  {
+    _id: "6",
+    title: "Is the best time to pray in the morning or night?",
+    tags: [
+      { _id: "3", name: "css" },
+      { _id: "4", name: "html" },
+    ],
+    author: {
+      _id: "2",
+      name: "Jessica Santiago",
       picture: "jane-smith.jpg",
     },
     upvotes: 5,

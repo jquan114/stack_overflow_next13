@@ -19,7 +19,7 @@ import { Input } from "@/components/ui/input";
 import { QuestionsSchema } from "@/lib/validations";
 // import { Badge } from "../ui/badge";
 import Image from "next/image";
-// import { createQuestion } from "@/lib/actions/question.action";
+import { createQuestion } from "@/lib/actions/question.action";
 import { useRouter, usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Badge } from "lucide-react";
@@ -48,6 +48,7 @@ const Question = ({ mongoUserId }: Props) => {
 
   // 2. Define a submit handler.
   async function onSubmit(values: z.infer<typeof QuestionsSchema>) {
+    console.log("The onSubmit function has been reached");
     setIsSubmitting(true);
 
     try {
@@ -251,12 +252,12 @@ const Question = ({ mongoUserId }: Props) => {
 };
 
 export default Question;
-function createQuestion(arg0: {
-  title: string;
-  content: string;
-  tags: string[];
-  author: any;
-  path: string;
-}) {
-  throw new Error("Function not implemented.");
-}
+// function createQuestion(arg0: {
+//   title: string;
+//   content: string;
+//   tags: string[];
+//   author: any;
+//   path: string;
+// }) {
+//   throw new Error("Function not implemented.");
+// }
